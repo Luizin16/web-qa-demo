@@ -1,16 +1,24 @@
-# React + Vite
+## QA Automation (Cypress + Vue)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Stack
+- Vue + Vite
+- Cypress E2E
+- API Mock com cy.intercept
+- CI com GitHub Actions
+- Relatório HTML (Mochawesome)
 
-Currently, two official plugins are available:
+### Rodar local
+npm install
+npm run build
+npm run e2e
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Cenários cobertos
+- Login sucesso
+- Login inválido
+- Validação obrigatória
+- Auth guard
+- Logout
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Evidências
+- Vídeos e screenshots em `cypress/videos` e `cypress/screenshots`
+- Relatório em `cypress/reports`
